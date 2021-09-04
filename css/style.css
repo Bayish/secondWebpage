@@ -1,0 +1,388 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    color: #202242;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif ;
+    background: #fff;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+.header-inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap ;
+}
+.header-top .logo{
+    font-size: 30px;
+    text-decoration: none;
+    color: #202242;
+    padding-top: 58px;
+    padding-bottom: 50px;
+}
+
+.header-top span {
+    font-weight: bold;
+}
+
+.main-nav{
+    border-left: #ebebeb solid 2px;
+    padding-top: 70px;
+    padding-bottom: 57px;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;  
+}
+
+.main-nav li {
+    margin-left: 21px;
+    display: inline-block;
+}
+
+.main-nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.main-block {
+    background:url(../images/main-picc.jpg) 0 0 no-repeat;
+    font-size: 40px;
+    color: #fefefe;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 44px;
+    letter-spacing: 1px;
+    height: auto;
+    width: 100%;
+    padding: 30px 0  110px  0;
+    margin-top:0;
+}
+
+.main-block h1 {
+    font-size: 48px;
+    position: relative;
+    font-family: 'Maven Pro', sans-serif;
+    color: #fff;
+    font-weight: 500;
+    text-transform: none;
+    padding: 155px 0 0 40px;
+    transform: scaleX(0.95);
+}
+.main-block h1::after{
+    content: "";
+    background: url(../images/on-main-pic.png) 0 0 no-repeat;
+    position: absolute;
+    top: 121%;
+    left: 47%;
+    width: 102px;
+    height: 110px;
+}
+
+.form{
+    background: #dddddd;
+    margin: 213px auto 108px ;
+    padding: 18px 0 21px;
+    width: 50%;
+    vertical-align: top;
+}
+
+.form-row {
+    display: inline-block;
+    margin:0;
+    padding: 0;
+}
+.form-row input{
+    outline: none;
+    width: 60%;
+    margin: auto 0;
+}
+.form-row input::placeholder{
+    font-size: 18px;
+    color: #2d2d2d;
+    text-align: center;
+}
+
+.form button {
+    background: #ffe13e;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    height: 55px;
+    margin-left: 2px;
+    outline: none;
+    border: none;
+    margin: 0 auto;
+}
+
+.block-services {
+    background:  linear-gradient(to right, #202242 0%,#202242 51%,#ffe13e 51%,#ffe13e 100%);
+    color: #fff;
+    padding-bottom: 104px;
+}
+
+.services-inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap ;
+    text-align: center;
+    padding-top: 34px;
+}
+.services-inner .services{
+    max-width: 50%;
+}
+
+.services-inner h4 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+
+.dm-services  h4{
+    padding: 0 2px 0 51px;
+}
+
+.services-inner p {
+    margin: 0 46px 2px 77px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.services-inner button{
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+    padding: 16px 55px 16px 51px
+}
+
+.block-features{
+    background: url(../images/bc-our-features.jpg) 0 0 no-repeat;
+    width: 100%;
+    height: auto;
+    display: block;
+    color: black;
+    text-align: center;
+    padding-bottom: 54px;
+}
+
+.block-features h3{
+    font-size: 48px;
+    font-family: 'Maven Pro', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+    padding: 85px 0 0 11px;
+}
+
+.block-features h5 {
+    font-size: 24px;
+    padding: 16px 0 0 20px;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.features-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.features-boxes .box{
+    max-width: 24%;
+    padding: 230px 1px 1px 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.features-boxes .box-1,
+.features-boxes .box-2,
+.features-boxes .box-3,
+.features-boxes .box-4 {
+    position: relative;
+}
+
+.features-boxes .box-1::before {
+    content: "";
+    background: url(../images/ic-box-1.png)0 0 no-repeat;
+    position: absolute;
+    top: 42px;
+    left: 70px;
+    height: 128px ;
+    width: 128px ;
+}
+.features-boxes .box-2::before {
+    content: "";
+    background: url(../images/ic-box-2.png)0 0 no-repeat;
+    position: absolute;
+    top: 42px;
+    left: 81px;
+    height: 128px ;
+    width: 128px ;
+}
+.features-boxes .box-3::before {
+    content: "";
+    background: url(../images/box-ic-3.png)0 0 no-repeat;
+    position: absolute;
+    top: 42px;
+    left: 90px;
+    height: 128px ;
+    width: 128px ;
+}
+.features-boxes .box-4::before {
+    content: "";
+    background: url(../images/box-ic-4.png)0 0 no-repeat;
+    position: absolute;
+    top: 42px;
+    left: 104px;
+    height: 128px ;
+    width: 128px ;
+}
+
+
+.features-boxes h5 {
+   font-size: 30px;
+   font-family: 'Maven Pro', sans-serif;
+   font-weight: 500;
+   color: #f4d320;
+   margin-bottom: 7px; 
+   padding: 0;
+}
+
+.features-boxes p {
+    font-size: 14px;
+    width: 95%;
+    line-height: 24px;
+    margin-left: 21px;
+}
+
+.features-boxes button {
+    margin:auto 0 0 0;
+    background: transparent;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    vertical-align: text-bottom;
+    text-transform: uppercase;
+    padding: 5px 2px 0 40px;
+}
+
+.clients-inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 43px;
+    padding-right: 2px;
+}
+
+.clients-inner .info {
+    max-width: 33%;
+}
+
+.info h3 {
+    font-size: 36px;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.info p {
+    color: #adadad;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.company-logos {
+    padding-top: 54px;
+}
+.company-logos a {
+    margin-left:47px ;
+    margin-right: -33px;
+}
+
+.clients-opinion {
+    padding-top: 78px;
+    line-height: 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.clients-opinion .item {
+    max-width: 28%;
+    height: 100%
+}
+
+.clients-opinion p {
+    font-size: 14px;
+    font-style: italic;
+    color: #a4a4a4;
+    min-height: 96px;
+}
+
+.clients-opinion span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.item-inner{
+    display: flex;
+    justify-content: space-between;
+    vertical-align: top;
+    padding-top: 2px;
+    margin-left:2px ;
+    margin-right: -14px;
+    padding-bottom: 51px;
+}
+
+.item-inner .img {
+    width: 89px;
+    height: 89px;
+    border-radius: 50%;
+}
+
+.footer {
+    background: #202242;
+    text-align: center;
+}
+
+.footer p {
+    position: relative;
+    padding: 80px 0;
+    color: #fff;
+    font-size: 14px;
+    margin-left: 31px;
+}
+
+.footer p::before {
+    content: "";
+    background: url(../images/ic-footer.png) 0 0 no-repeat;
+    position: absolute;
+    top: 33px;
+    left: 49%;
+    width: 31px;
+    height: 30px;
+}
